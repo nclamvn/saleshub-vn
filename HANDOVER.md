@@ -1,10 +1,22 @@
 # HANDOVER - SalesHub VN MVP
 
-## Trạng thái hiện tại: BUILD THÀNH CÔNG
+## Trạng thái hiện tại: PRODUCTION READY
 
-**Ngày cập nhật:** 2025-12-31
-**Dev Server:** http://localhost:3003 (đang chạy)
+**Ngày cập nhật:** 2026-01-04
+**Dev Server:** http://localhost:4000
+**GitHub Repo:** https://github.com/nclamvn/saleshub-vn
 **Thư mục project:** `/Users/mac/demo/SalesHub`
+
+---
+
+## Cách tiếp tục làm việc
+
+Khi quay lại, chỉ cần nói với Claude:
+```
+đọc handover và tiếp tục
+```
+
+Claude sẽ đọc file này và hiểu ngay context của dự án.
 
 ---
 
@@ -132,8 +144,8 @@ SalesHub VN là SaaS MVP cho Sales/Recruiter/HR tại Việt Nam, được xây 
 ## Commands
 
 ```bash
-# Chạy dev server
-cd /Users/mac/demo/SalesHub && npm run dev
+# Chạy dev server (port 4000)
+cd /Users/mac/demo/SalesHub && npm run dev -- -p 4000
 
 # Build production
 npm run build
@@ -143,6 +155,9 @@ npx tsc --noEmit
 
 # Lint
 npm run lint
+
+# Git push
+git add -A && git commit -m "message" && git push
 ```
 
 ---
@@ -156,4 +171,16 @@ npm run lint
 
 ---
 
-**Khi quay lại, chỉ cần nói "continue" và cho biết task tiếp theo cần làm.**
+---
+
+## Session cuối (2026-01-04)
+
+**Những gì đã làm:**
+1. Khởi tạo Git repository
+2. Push lên GitHub: https://github.com/nclamvn/saleshub-vn
+3. Chạy dev server trên port 4000
+
+**Khi quay lại, chỉ cần nói:**
+```
+đọc handover và tiếp tục
+```
